@@ -9,15 +9,17 @@
         <title>Vue Introduction</title>
     </head>
     <body>
-        <h1 id="printed">{{message}}</h1>
         <script src="https://unpkg.com/vue@3"></script>
-        <script>
-            const { toPrint } = Vue;
 
-            toPrint({
+        <h1 id="printed">{{ message }}</h1>
+
+        <script>
+            const { createApp } = Vue;
+
+            createApp({
                 data() {
                     return {
-                        message: "Ciao Vue!",
+                        message: "NOOOOO Vue!",
                     };
                 },
             }).mount("#printed");
